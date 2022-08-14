@@ -1,0 +1,17 @@
+
+[1mFrom:[0m /home/alexis-ruiz/Documents/custom_enumerable_project/lib/my_enumerables.rb:178 Object#merge:
+
+    [1;34m176[0m: [32mdef[0m [1;34mmerge[0m(astart, aend, ret = [])
+    [1;34m177[0m:   binding.pry
+ => [1;34m178[0m:   (astart.length + aend.length).times [32mdo[0m
+    [1;34m179[0m:     [32mif[0m aend.empty?
+    [1;34m180[0m:       [32mreturn[0m ret + astart
+    [1;34m181[0m:     [32melsif[0m astart.empty?
+    [1;34m182[0m:       [32mreturn[0m ret + aend
+    [1;34m183[0m:     [32mend[0m
+    [1;34m184[0m: 
+    [1;34m185[0m:     astart[[1;34m0[0m] < aend[[1;34m0[0m] ? ret.push(astart.shift) : ret.push(aend.shift)
+    [1;34m186[0m:   [32mend[0m
+    [1;34m187[0m:   ret
+    [1;34m188[0m: [32mend[0m
+
